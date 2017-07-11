@@ -14,11 +14,12 @@ html, body {
 }
 
 .title-section {
-  color: black;
+  color: white;
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 
@@ -42,11 +43,13 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .experience-section {
   height: 100%;
   background-color: purple;
+  position: relative;
 }
 
 .vertical-center {

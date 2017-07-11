@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+
+.fixed_button {
+  position: fixed;
+  right: 2%;
+  z-index: 9999;
+}
+
+.fa-bars {
+  color: black;
+}
+
+.title-section {
+  color: black;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.title-section::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  background: url("../images/ubuntu.jpg") no-repeat center center;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+
+.profile-section {
+  background-color: grey;
+  height: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.experience-section {
+  height: 100%;
+  background-color: purple;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron {
+  background: rgb(200, 54, 54);
+  background: rgba(200, 54, 54, 0);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center {
+  text-align: center;
+}
+
+.carousel {
+  height: 85%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.carousel-padding {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+}
+.exp_header {
+  height: 15%;
+  text-align: center;
+  transform: translateY(15%);
+}
+
+.outer-circle {
+  width: 100%;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+  background-color: black;
+}
+
+.line {
+  font-size: 25px;
+}
+
+.break_line {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.display-5 {
+  font-size: 3.0rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.info_line {
+  font-size: 1rem;
+  font-weight: 300;
+}

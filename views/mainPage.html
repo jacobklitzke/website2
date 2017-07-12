@@ -14,29 +14,35 @@
     <script src="/material/angular-material.min.js"></script>
     <script src="/jquery/dist/jquery.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/scroll/angular-scroll.min.js"></script>
 
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/material/angular-material.min.css" />
     <link rel="stylesheet" href="/fonts/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
 </head>
 
 <body ng-controller="mainPageCtrl">
-    <md-sidenav md-component-id="right" class="md-sidenav-right">
-        Right Nav!
+    <md-sidenav md-component-id="right" class="md-sidenav-right sidenav-float">
+        <md-list>
+            <md-list-item><a href="#home" class="md-headline" ng-click="scrollToSection('home')">Home</a></md-list-item>
+            <md-list-item><a href="#profile" class="md-headline" ng-click="scrollToSection('profile')">Profile</a></md-list-item>
+            <md-list-item><a href="#experience" class="md-headline" ng-click="scrollToSection('experience')">Experience</a></md-list-item>
+        </md-list>
     </md-sidenav>
     <span ng-click="openRightMenu()" class="fixed_button"><i class="fa fa-bars fa-2x"></i></span>
-    <div class="title-section">
+    <div id="home" class="title-section">
         <div class="jumbotron">
             <h1 class="display-3 center">Hello, world!</h1>
             <hr width="50%" class="my-1 center">
             <p class="lead center">This is a simple hero unit, a simple</p>
         </div>
     </div>
-    <div id="test" class="profile-section">
+    <div id="profile" class="profile-section">
         Test2
     </div>
-    <div class="experience-section">
+    <div id="experience" class="experience-section">
             <h1 class=" display-3 exp_header">Experience</h1>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="false">
               <ol class="carousel-indicators">

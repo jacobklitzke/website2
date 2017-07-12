@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute', 'ngMaterial']);
+var app = angular.module('myApp', ['ngRoute', 'ngMaterial', 'duScroll']);
 app.config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when("/", {

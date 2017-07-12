@@ -13,6 +13,8 @@ app.use('/jquery', express.static(__dirname + '/node_modules/jquery'));
 app.use('/fonts', express.static(__dirname + '/node_modules/font-awesome'));
 app.use('/styles', express.static(__dirname + '/styles'));
 app.use('/images', express.static(__dirname + '/images'));
+app.use('/scroll', express.static(__dirname + '/node_modules/angular-scroll'));
+
 
 
 

@@ -9,8 +9,12 @@ html, body {
   z-index: 9999;
 }
 
+.sidenav-float {
+  z-index: 9998;
+}
+
 .fa-bars {
-  color: black;
+  color: white;
 }
 
 .title-section {

@@ -29,6 +29,9 @@
             <md-list-item><a href="#home" class="md-headline" ng-click="scrollToSection('home')">Home</a></md-list-item>
             <md-list-item><a href="#profile" class="md-headline" ng-click="scrollToSection('profile')">Profile</a></md-list-item>
             <md-list-item><a href="#experience" class="md-headline" ng-click="scrollToSection('experience')">Experience</a></md-list-item>
+            <md-list-item><a href="#skills" class="md-headline" ng-click="scrollToSection('skills')">Skills</a></md-list-item>
+            <md-list-item><a href="#projects" class="md-headline" ng-click="scrollToSection('projects')">Projects</a></md-list-item>
+            <md-list-item><a href="#contact" class="md-headline" ng-click="scrollToSection('contact')">Contact</a></md-list-item>
         </md-list>
     </md-sidenav>
     <span ng-click="openRightMenu()" class="fixed_button"><i class="fa fa-bars fa-2x"></i></span>
@@ -40,7 +43,25 @@
         </div>
     </div>
     <div id="profile" class="profile-section">
-        <h1 class=" display-3 exp_header">Profile</h1>
+        <h1 class=" display-3 exp_header">Profile</h1><br>
+        <div class="container">
+           <div class="row">
+              <div class="col-md-4">
+                  <div class="imgAbt">
+                      <img src="https://previews.123rf.com/images/annunna1/annunna10912/annunna1091200005/6072264-kid-making-a-silly-face-with-big-toothy-smile-isolated-on-white-Stock-Photo.jpg" class="img-fluid" alt="Responsive image">
+                      <!-- <img width="220" height="275" src="https://previews.123rf.com/images/annunna1/annunna10912/annunna1091200005/6072264-kid-making-a-silly-face-with-big-toothy-smile-isolated-on-white-Stock-Photo.jpg" /> -->
+                  </div>
+              </div>
+              <div class="col-md-8">
+                  <p text-align:left><b>Education:</b>
+                      <br>Bachelor of Science—Computer Engineering
+                      <br>Wichita State University | Wichita, KS
+                  </p>
+
+                  <p text-align:left>Lots of text here...With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a .clearfix and o</p>
+              </div>
+            </div>
+        </div>
     </div>
     <div id="experience" class="experience-section">
             <h1 class=" display-3 exp_header">Experience</h1>
@@ -160,89 +181,105 @@
         </div>
     <div id="skills" class="skills-section">
         <h1 class="display-3 center">Skills</h1>
-          <table style="width:100%">
-            <tr>
-              <th>Tools</th>
-              <th>Proficiency Level</th>
-            </tr>
-            <tr>
-              <td>Firefox</td>
-              <td>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>Safari</td>
-              <td>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </td>
-            </tr>
-          </table>
-      </div>
-      <div id="projects" class="projects-section">
-    <h1 class="display-3 center">Projects</h1>
-    <h2 class="sub-header">"I've found that small wins, small projects, small differences often make huge differences."
-      <br> - Rosabeth Moss Kanter</h2>
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <!-- <img class="img-circle" src="http://mtandt.com/wp-content/uploads/revslider/customerserive/grey-circle-.png" alt="Generic placeholder image" width="140" height="140"> -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-block">
-            <h4 class="card-title">Project #1</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5 col-sm-3"><b>Programming Languages</b></div>
+            </div>
+            <div class="row"> <!--Browsers-->
+                <div class="col-xs-5 col-sm-3">HTML</div>
+                <div class="col-xs-6 col-sm-3">
+                  <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                  <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                  <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                  <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-5 col-sm-3">C++</div>
+                <div class="col-xs-6 col-sm-3">
+                    <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                    <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                    <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                    <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 col-sm-3"><b>Browsers</b></div>
+            </div>
+            <div class="row"> <!--Browsers-->
+                <div class="col-xs-5 col-sm-3">Firefox</div>
+                <div class="col-xs-6 col-sm-3">
+                  <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                  <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                  <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                  <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-5 col-sm-3">Safari</div>
+                <div class="col-xs-6 col-sm-3">
+                    <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                    <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                    <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                    <i align="center" class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
-        <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
       </div>
-      <!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <!-- <img class="img-circle" src="http://mtandt.com/wp-content/uploads/revslider/customerserive/grey-circle-.png" alt="Generic placeholder image" width="140" height="140"> -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-block">
-            <h4 class="card-title">Project #2</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div id="projects" class="projects-section">
+        <h1 class="display-3 center">Projects</h1>
+        <h2 class="sub-header">"I've found that small wins, small projects, small differences often make huge differences."
+          <br> - Rosabeth Moss Kanter</h2>
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <!-- <img class="img-circle" src="http://mtandt.com/wp-content/uploads/revslider/customerserive/grey-circle-.png" alt="Generic placeholder image" width="140" height="140"> -->
+            <div class="card" style="width: 20rem;">
+              <div class="card-block">
+                <a href="http://google.com" target="_blank" class="card-title">Project #1</a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- <a href="#" class="btn btn-primary">Git Repository</a> -->
+              </div>
+            </div>
+            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
           </div>
-        </div>
-        <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-      </div>
-      <!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <!-- <img class="img-circle" src="http://mtandt.com/wp-content/uploads/revslider/customerserive/grey-circle-.png" alt="Generic placeholder image" width="140" height="140"> -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-block">
-            <h4 class="card-title">Project #3</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <!-- <img class="img-circle" src="http://mtandt.com/wp-content/uploads/revslider/customerserive/grey-circle-.png" alt="Generic placeholder image" width="140" height="140"> -->
+            <div class="card" style="width: 20rem;">
+              <div class="card-block">
+                <a href="http://google.com" target="_blank" class="card-title">Project #2</a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- <a href="#" class="btn btn-primary">Git Repository</a> -->
+              </div>
+            </div>
+            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
           </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <!-- <img class="img-circle" src="http://mtandt.com/wp-content/uploads/revslider/customerserive/grey-circle-.png" alt="Generic placeholder image" width="140" height="140"> -->
+            <div class="card" style="width: 20rem;">
+              <div class="card-block">
+                <a href="http://google.com" target="_blank" class="card-title">Project #3</a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- <a href="#" class="btn btn-primary">Git Repository</a> -->
+              </div>
+            </div>
+            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+          </div>
+          <!-- /.col-lg-4 -->
         </div>
-        <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-      </div>
-      <!-- /.col-lg-4 -->
+     </div>
+    <div id="contact" class="contact-section">
+        <h1 class="display-3 center">Contact</h1>
+        <h2 class="sub-header">"Do what you can, with what you have, where you are."
+            <br>- Theodore Roosevelt</h2>
+        <br>
+        <hr align="center" width="10%" class="break_line" />
+        <i align="center" class="fa fa-instagram" aria-hidden="true">
+              <span class="body-text">@YourInstagramName</span></i>
+        <br><i align="center" class="fa fa-linkedin" aria-hidden="true">
+              <span class="body-text">@YourLinkedInURL </span></i>
+        <br><i align="center" class="fa fa-paper-plane" aria-hidden="true">
+              <span class="body-text">youremail@email.com</span></i>
+        <hr align="center" width="10%" class="break_line" />
     </div>
-  </div>
-    <div id="contacts" class="contacts-section">
-    <h1 class="display-3 center">Contact</h1>
-    <h2 class="sub-header">"Do what you can, with what you have, where you are."
-        <br>- Theodore Roosevelt</h2>
-    <br>
-    <hr align="center" width="10%" class="break_line" />
-    <i align="center" class="fa fa-instagram" aria-hidden="true">
-          <span class="body-text">@YourInstagramName</span></i>
-    <br><i align="center" class="fa fa-linkedin" aria-hidden="true">
-          <span class="body-text">@YourLinkedInURL </span></i>
-    <br><i align="center" class="fa fa-paper-plane" aria-hidden="true">
-          <span class="body-text">youremail@email.com</span></i>
-    <hr align="center" width="10%" class="break_line" />
-  </div>
 </body>
 
 </html>

@@ -16,7 +16,7 @@
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/scroll/angular-scroll.min.js"></script>
 
-    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/material/angular-material.min.css" />
     <link rel="stylesheet" href="/fonts/css/font-awesome.min.css" />
@@ -43,13 +43,15 @@
         </div>
     </div>
     <div id="profile" class="profile-section">
-        <h1 class="display-4 profile_header">Profile</h1>
-        <hr width="50%" class="my-1 center">
-        <p class="lead center">A forward thinking, creative, computer engineer</p>
+        <div class="profile_header_size">
+            <h1 class="display-4 section_header">Profile</h1>
+            <hr width="50%" class="my-1 center">
+            <p class="lead center">A forward thinking, creative, computer engineer</p>
+        </div>
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3 profile-subsection">
-                <p class="profile-subhead">About Me</p>
+            <div class="col-md-3 section-subsection">
+                <p class="section-subhead">About Me</p>
                 <p style="text-align: justify; text-justify: distribute">
                     I am a professional computer engineer who loves exploring new technologies and learning about the latest
                     innovations in the industry. This love of exploration has led to the devlopment of skills in many different
@@ -61,7 +63,7 @@
                 <img class="profile_image" src="../images/profile.jpg"/>
             </div>
             <div class="col-md-3 profile-subsection">
-                <p class="profile-subhead">Highlights</p>
+                <p class="section-subhead">Highlights</p>
                 <p><b>Location:</b><br />
                 <i class="fa fa-map-marker"></i>
                 Raleigh, NC<br /></p>
@@ -70,14 +72,13 @@
                 <i class="fa fa-map"></i>
                 Wichita State University | Wichita, KS<br /></p>
                 <p><b>Certifications:</b><br />
-                &bull; CCNA Route/Switch<br />
+                &bull; CCNA Route/Switch<br /></p>
             </div>
             <div class="col-md-1"></div>
         </div>
     </div>
     <div id="experience" class="experience-section">
-        <h1 class=" display-3 exp_header">Experience</h1>
-        <hr width="50%" class="my-1 center">
+        <h1 class="display-4 section_header">Experience</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="false">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -90,44 +91,65 @@
                         <div class="row">
                             <div class="col">
                                 <div style="padding-right: 10px;">
-                                    <div class="circle" style="float: left;">
+                                    <div style="float: left;">
+                                        <img class="exp_circle" src="../images/cisco.png"/>
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
-                                        <h1 class="display-5">Company name</h1>
+                                        <h1 class="display-5">Cisco Systems</h1>
                                     </div>
                                 </div>
-
                                 <hr align="left" width="90%" class="break_line" />
                                 <div class="info_line">
-                                    <i class="fa fa-clock-o" aria-hidden="true"></i> Time period
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> July 2017 - Present
                                     <span class="line">|</span>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Dallas, TX
                                     <span class="line">|</span>
-                                    <i class="fa fa-link" aria-hidden="true"></i> Link
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                    <a href="https://cisco.com" target="_blank">Cisco</a>
                                 </div>
                                 <div>
-                                    <p class="font-weight-normal">Description of Job and responsibilities.</p>
+                                    <h5>Customer Support Engineer</h5>
+                                    <p class="hide-mobile">For my first position after graduating college, I joined Cisco as a customer support
+                                    engineer. This role requires strong troubleshooting skills in a fast-paced, innovation driven environment.
+                                    I joined the security team which supports both Cisco Firewall and FIREPower products. The main objective of this team is
+                                    troubleshoot and resolve complex customer issues pertaining to those products. Additionally, the team contributes technical content to a
+                                    knowledge base to provide further support to customers. <br /><br />
+                                    This position requires extremely good communication skills, the ability to work on several
+                                    projects seemingly at the same time, technical writing skills, an innovation driven attitude,
+                                    and the ability to solve complex customer issues under pressure.</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div style="padding-right: 10px;">
-                                    <div class="circle" style="float: left;">
+                                    <div style="float: left;">
+                                        <img class="exp_circle" src="../images/netapp.png"/>
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
-                                        <h1 class="display-5">Company name</h1>
+                                        <h1 class="display-5">NetApp</h1>
                                     </div>
                                 </div>
 
                                 <hr align="left" width="90%" class="break_line" />
                                 <div class="info_line">
-                                    <i class="fa fa-clock-o" aria-hidden="true"></i> Time period
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> March 2016 - June 2017
                                     <span class="line">|</span>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Wichita, KS
                                     <span class="line">|</span>
-                                    <i class="fa fa-link" aria-hidden="true"></i> Link
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                    <a href="https://netapp.com" target="_blank">NetApp</a>
                                 </div>
                                 <div>
-                                    <p class="font-weight-normal">Description of Job and responsibilities.</p>
+                                    <h5>QA Contractor</h5>
+                                    <p class="hide-mobile">As a senior in college, I joined a team responsible for testing
+                                    and validating the software and firmware associated with NetApp E-series products. The
+                                    main objective of this team is to ensure that NetApp E-series software and firmware is stable and provides
+                                    the end-user with a high-quality, enterprise-grade product. <br /><br />
+                                    This position required excellent teamwork and communication, a strong understanding of
+                                    NetApp E-series storage, knowledge of both Windows Server and popular Linux server
+                                    distributions, an understanding of optimal E-series storage topologies, knowledge of the
+                                    popular applications for E-series devices, the ability to perform basic troubleshooting
+                                    of E-series storage, and the ability to work on multiple projects at once while still meeting
+                                    important deadlines. </p>
                                 </div>
                             </div>
                         </div>
@@ -137,21 +159,72 @@
                     <div class="container carousel-padding">
                         <div class="row">
                             <div class="col">
-                                <div class="circle">
+                                <div style="padding-right: 10px;">
+                                    <div style="float: left;">
+                                        <img class="exp_circle" src="../images/ennovar.png"/>
+                                    </div>
+                                    <div style="padding-left: 10px; float: left;">
+                                        <h1 class="display-5">Ennovar</h1>
+                                    </div>
+                                </div>
+                                <hr align="left" width="90%" class="break_line" />
+                                <div class="info_line">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> March 2015 - March 2016
+                                    <span class="line">|</span>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Wichita, KS
+                                    <span class="line">|</span>
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                    <a href="http://wichita.edu/ennovar" target="_blank">Ennovar</a>
+                                </div>
+                                <div>
+                                    <h5>Solutions Test Validation Engineer</h5>
+                                    <p class="hide-mobile">As a junior in college, I joined a team sponsored by NetApp
+                                    responsible for testing, validating, and publishing information regarding the
+                                    capabilities of various manufacturer's storage equipment. These manufacturers include:
+                                    NetApp, Dell, and IBM. Microsoft Exchange, vRanger, and IBM Spectrum Scale
+                                    (High Performance Computing) are examples of the technologies that were tested by this
+                                    team.<br /><br />
+                                    This position required excellent teamwork, strong technical writing skills,
+                                    an understanding of storage systems and their related terminologies and topologies,
+                                    knowledge of Windows Server 2012 and Linux configurations, deep understanding of all
+                                    software and testing environments of each project as well as their associated best
+                                    practices and optimal configurations, and the ability to translate difficult
+                                    engineering terminology to easy-to-read technical articles. </p>
                                 </div>
                             </div>
                             <div class="col">
-                                <h1 class="display-5">Company name</h1>
+                                <div style="padding-right: 10px;">
+                                    <div style="float: left;">
+                                        <img class="exp_circle" src="../images/ennovar.png"/>
+                                    </div>
+                                    <div style="padding-left: 10px; float: left;">
+                                        <h1 class="display-5">Ennovar</h1>
+                                    </div>
+                                </div>
+
                                 <hr align="left" width="90%" class="break_line" />
                                 <div class="info_line">
-                                    <i class="fa fa-clock-o" aria-hidden="true"></i> Time period
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> August 2014 - March 2016
                                     <span class="line">|</span>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Wichita, KS
                                     <span class="line">|</span>
-                                    <i class="fa fa-link" aria-hidden="true"></i> Link
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                    <a href="http://wichita.edu/ennovar" target="_blank">Ennovar</a>
                                 </div>
                                 <div>
-                                    <p class="font-weight-normal">Description of Job and responsibilities.</p>
+                                    <h5>Network Engineer</h5>
+                                    <p class="hide-mobile">As a sophomore, I was assigned to a team responsible for
+                                    creating, configuring, and maintaining the network at Ennovar. Almost all of the
+                                    networking equipment at Ennovar is Cisco equipment. This team implemented networking
+                                    technologies such as L3 switching, ACLs, NAT, HSRP, VPC, and VPNs. This team was also
+                                    responsible for diagnosing and resolving any networking issues that occurred at Ennovar.
+                                    <br /><br />
+                                    This position requires a strong understanding of networking concepts, including routing,
+                                    switching, and security; the ability to effectively configure and troubleshoot Cisco
+                                    networking equipment via the command line interface; a high degree of knowledge of the
+                                    configuration and security policies associated with Windows Server 2012; a fundamental
+                                    understanding of the configuration options of ESXi; and knowledge of Apache web servers,
+                                    PHP, and mediaWiki configuration options.</p>
                                 </div>
                             </div>
                         </div>
@@ -161,22 +234,41 @@
                     <div class="container carousel-padding">
                         <div class="row">
                             <div class="col">
-                                <div class="circle">
+                                <div style="padding-right: 10px;">
+                                    <div style="float: left;">
+                                        <img class="exp_circle" src="../images/ennovar.png"/>
+                                    </div>
+                                    <div style="padding-left: 10px; float: left;">
+                                        <h1 class="display-5">Ennovar</h1>
+                                    </div>
+                                </div>
+                                <hr align="left" width="90%" class="break_line" />
+                                <div class="info_line">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> May 2014 - March 2015
+                                    <span class="line">|</span>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Wichita, KS
+                                    <span class="line">|</span>
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                    <a href="http://wichita.edu/ennovar" target="_blank">Ennovar</a>
+                                </div>
+                                <div>
+                                    <h5>Software Developer</h5>
+                                    <p class="hide-mobile"> As a sophomore in college, I was assigned to a team
+                                    responsible for the development of an automated method of applying a storage array
+                                    configuration, which has many configurable options and settings, to a device. This
+                                    project was a partnership between NetApp and Ennovar. There were many different
+                                    tools NetApp used to accomplish the task of applying a configuration to a storage
+                                    array, but there was no easy way to move the configuration from a workstation to a
+                                    storage array. The goal of our project was to automate the process of reading the
+                                    configuration data from a database and applying it to an array<br /><br />
+                                    This position required strong programming skills, especially in Java; an excellent
+                                    knowledge of how to implement algorithms efficiently in code; the ability to thoroughly
+                                    test and validate code; the ability to analyze and translate code from one language
+                                    to another; and the ability to write clean, understandable code that would allow other
+                                    developers to easily understand what the code was doing.</p>
                                 </div>
                             </div>
                             <div class="col">
-                                <h1 class="display-5">Company name</h1>
-                                <hr align="left" width="90%" class="break_line" />
-                                <div class="info_line">
-                                    <i class="fa fa-clock-o" aria-hidden="true"></i> Time period
-                                    <span class="line">|</span>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Location
-                                    <span class="line">|</span>
-                                    <i class="fa fa-link" aria-hidden="true"></i> Link
-                                </div>
-                                <div>
-                                    <p class="font-weight-normal">Description of Job and responsibilities.</p>
-                                </div>
                             </div>
                         </div>
                     </div>

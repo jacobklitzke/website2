@@ -42,10 +42,7 @@ html, body {
 }
 
 .profile-section {
-  height: 75%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 75%;
   position: relative;
   background-color: #f9f9f9;
   padding: 0px 50px 50px 50px;
@@ -53,8 +50,8 @@ html, body {
 
 .profile_image {
   border-radius: 50%;
-  max-width: 85%;
-  max-height: 85%;
+  max-width: 90%;
+  max-height: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -63,7 +60,7 @@ html, body {
   border-color: #e8e8e8;
 }
 
-.profile-subhead {
+.section-subhead {
   color: #17a7b5;
   text-align: left;
   font-size: 1.5rem;
@@ -72,9 +69,17 @@ html, body {
 }
 
 .experience-section {
-  height: 100%;
+  min-height: 100%;
   background-color: #e8e8e8;
   position: relative;
+  padding: 0px 50px 50px 50px;
+  height: auto;
+}
+
+.exp-description {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skills-section {
@@ -102,20 +107,7 @@ html, body {
 h1 {
   color: white;
 }
-h2 {
-  text-align: center;
-  color: white;
-}
-h3 {
-  font-size: 10px;
-  font-style: italic;
-  text-align: center;
-}
 
-a {
-  font-size: 25px;
-  /*font-weight: bold;*/
-}
 .body-text {
   font-size: 15px;
   text-align: center;
@@ -133,12 +125,6 @@ a {
   max-width: 75%;
   height: auto;
 }
-.vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
 
 .jumbotron {
   background: rgb(200, 54, 54);
@@ -153,7 +139,7 @@ a {
 }
 
 .carousel {
-  height: 85%;
+  min-height: 85%;
   width: 100%;
   z-index: 1000;
 }
@@ -161,32 +147,33 @@ a {
 .carousel-padding {
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 50px;
+  padding-top: 10px;
 }
-.exp_header {
-  height: 15%;
-  text-align: center;
-  transform: translateY(15%);
-}
-.profile_header {
-  height: 15%;
+
+.section_header {
   text-align: center;
   transform: translateY(15%);
   position: relative;
-  padding: 0px 0px 0px 0px;
-  /*color: #0f0f0f*/
-  color: #17a7b5
+  padding: 0px 0px 10px 0px;
+  color: #17a7b5;
 }
 
-.outer-circle {
-  width: 100%;
+.profile_header_size {
+  height: 20%;
 }
 
-.circle {
+.exp_circle {
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-  background-color: black;
+  max-width:100%;
+  max-height:100%;
+}
+
+@media only screen and (max-device-width: 480px) {
+      .hide-mobile {
+        display: none;
+      }
 }
 
 .line {
@@ -202,6 +189,7 @@ a {
   font-size: 3.0rem;
   font-weight: 300;
   line-height: 1.1;
+  color: #1c1c1c;
 }
 
 .info_line {

@@ -9,5 +9,4 @@ app.controller('mainPageCtrl', ['$scope', '$mdSidenav', '$document',function($sc
         $mdSidenav('right').close();
         $document.scrollToElementAnimated(angular.element(document.getElementById(elementName)), 0, 2000);
     };
-
 }]);

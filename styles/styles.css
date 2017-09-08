@@ -85,8 +85,8 @@ html, body {
 .skills-section {
   height: auto;
   background-color: #f9f9f9;
-  opacity: 0.75;
-  padding: 5px 50px 50px 50px;
+  position: relative;
+  padding: 0px 50px 50px 50px;
 }
 
 .projects-section {

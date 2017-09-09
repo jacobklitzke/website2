@@ -3,9 +3,18 @@ html, body {
   margin: 0px;
 }
 
+a {
+
+    color: black;
+}
+
+a:hover {
+  color: black;
+}
+
 .fixed_button {
   position: fixed;
-  right: 2%;
+  right: 1%;
   z-index: 9999;
 }
 
@@ -13,7 +22,11 @@ html, body {
   z-index: 9998;
 }
 
-.fa-bars {
+.icon_color_open {
+  color: black;
+}
+
+.icon_color_closed {
   color: white;
 }
 
@@ -92,16 +105,16 @@ html, body {
 .projects-section {
   height: auto;
   background-color: #e8e8e8;
-  opacity: 0.75;
-  padding: 5px 50px 50px 50px;
+  opacity: 1.0;
+  padding: 0px 50px 50px 50px;
 }
 
 .contact-section {
   height: auto;
-  background-color: #627624;
-  opacity: 0.65;
+  background-color: #f9f9f9;
+  position: relative;
   text-align: center;
-  padding: 5px 50px 50px 50px;
+  padding: 0px 50px 50px 50px;
 }
 
 h1 {
@@ -195,4 +208,17 @@ h1 {
 .info_line {
   font-size: 1rem;
   font-weight: 300;
+}
+
+.light_up:hover{
+  background-color: rgba(23,161,185,0.3);
+}
+
+a.contact_links {
+  color: #141414;
+  text-decoration: none !important;
+}
+
+a.contact_links:hover {
+  color: #17a7b5;
 }

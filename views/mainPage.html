@@ -34,7 +34,7 @@
             <md-list-item><a href="#contact" class="md-headline" ng-click="scrollToSection('contact')">Contact</a></md-list-item>
         </md-list>
     </md-sidenav>
-    <span ng-click="openRightMenu()" class="fixed_button"><i class="fa fa-bars fa-2x"></i></span>
+    <span ng-click="openRightMenu()" class="fixed_button"><i class="fa fa-bars fa-2x" ng-class="{icon_color_closed : !opened, icon_color_open : opened}"></i></span>
     <div id="home" class="title-section">
         <div class="jumbotron">
             <h1 class="display-3 center">Jacob Klitzke</h1>
@@ -52,7 +52,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-3 section-subsection">
                 <p class="section-subhead">About Me</p>
-                <p style="text-align: justify; text-justify: distribute">
+                <p>
                     I am a professional computer engineer who loves exploring new technologies and learning about the latest
                     innovations in the industry. This love of exploration has led to the devlopment of skills in many different
                     areas. My first passion is networking and troubleshooting, but I also enjoy programming, especially automation.
@@ -293,7 +293,7 @@
                         <div class="row">
                             <li class="col-md-6 section-subhead">Networking</li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Switching</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -303,7 +303,7 @@
                                 <i class="fa fa-star"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Routing</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -313,7 +313,7 @@
                                 <i class="fa fa-star"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Security (ASA)</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -323,7 +323,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Network Troubleshooting</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -333,7 +333,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Network Automation</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -350,7 +350,7 @@
                         <div class="row">
                             <li class="col-md-6 section-subhead">Programming</li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Java</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -360,7 +360,7 @@
                                 <i class="fa fa-star"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">NodeJS</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -370,7 +370,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Angular</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -380,7 +380,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Python</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -390,7 +390,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Bash</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -400,7 +400,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">C++</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -420,7 +420,7 @@
                         <div class="row">
                             <li class="col-md-6 section-subhead">Networking</li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Switching</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -430,7 +430,7 @@
                                 <i class="fa fa-star"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Routing</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -440,7 +440,7 @@
                                 <i class="fa fa-star"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Security (ASA)</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -450,7 +450,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Network Troubleshooting</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -460,7 +460,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Network Automation</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -477,7 +477,7 @@
                         <div class="row">
                             <li class="col-md-6 section-subhead">Programming</li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Java</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -487,7 +487,7 @@
                                 <i class="fa fa-star"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">NodeJS</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -497,7 +497,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Angular</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -507,7 +507,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Python</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -517,7 +517,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">Bash</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -527,7 +527,7 @@
                                 <i class="fa fa-star-o"></i>
                             </li>
                         </div>
-                        <div class="row">
+                        <div class="row light_up">
                             <li class="col-md-6 py-1">C++</li>
                             <li class="col-md-6 text-right">
                                 <i class="fa fa-star"></i>
@@ -586,18 +586,24 @@
         </div>
     </div>
     <div id="contact" class="contact-section">
-        <h1 class="display-3 center">Contact</h1>
-        <h2 class="sub-header">"Do what you can, with what you have, where you are."
-            <br>- Theodore Roosevelt</h2>
-        <br>
-        <hr align="center" width="10%" class="break_line" />
-        <i align="center" class="fa fa-instagram" aria-hidden="true">
-              <span class="body-text">@YourInstagramName</span></i>
-        <br><i align="center" class="fa fa-linkedin" aria-hidden="true">
-              <span class="body-text">@YourLinkedInURL </span></i>
-        <br><i align="center" class="fa fa-paper-plane" aria-hidden="true">
-              <span class="body-text">youremail@email.com</span></i>
-        <hr align="center" width="10%" class="break_line" />
+        <h1 class="display-4 center section_header">Contact</h1>
+        <hr width="50%" class="my-1 center">
+        <div>
+            <i align="center" class="fa fa-twitter" style="color: #141414;" aria-hidden="true"></i>
+            <a class="contact_links" href="https://twitter.com/jacobklitzke" target="_blank">@jacobklitzke</a>
+        </div>
+        <div>
+            <i align="center" class="fa fa-linkedin" style="color: #141414;" aria-hidden="true"></i>
+            <a class="contact_links" href="https://linkedin.com/in/jacobklitzke" target="_blank">/in/jacobklitzke</a>
+        </div>
+        <div>
+            <i align="center" class="fa fa-paper-plane" style="color: #141414;" aria-hidden="true"></i>
+            <a class="contact_links" href="mailto:jacobklitzke@gmail.com?Subject=Hi%20Jacob" target="_blank">Email Me!</a>
+        </div>
+        <div>
+            <i align="center" class="fa fa-book" style="color: #141414;" aria-hidden="true"></i>
+            <a class="contact_links" href="../images/resume.pdf" target="_blank">Resume</a>
+        </div>
     </div>
 </body>
 

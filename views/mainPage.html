@@ -1,7 +1,7 @@
 <html ng-app="myApp">
 
 <head>
-    <title>Hello World</title>
+    <title>Jacob Klitzke - Profile</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,8 +16,8 @@
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/scroll/angular-scroll.min.js"></script>
 
-    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/styles.min.css" />
     <link rel="stylesheet" href="/material/angular-material.min.css" />
     <link rel="stylesheet" href="/fonts/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
@@ -36,15 +36,16 @@
             <md-list-item class="md-3-line">
                 <div class="md-list-item-text" layout="column">
                     <h1 class="md-headline">Contact:</h1>
-                    <a class="nav_link" href="https://twitter.com/jacobklitzke" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> @jacobklitzke</a>
-                    <a class="nav_link" href="https://linkedin.com/in/jacobklitzke" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> /in/jacobklitzke</a>
-                    <a class="nav_link" href="mailto:jacobklitzke@gmail.com?Subject=Hi%20Jacob" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i> Email Me!</a>
-                    <a class="nav_link" href="../images/resume.pdf" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Resume</a>
+                    <a class="nav-link" href="https://twitter.com/jacobklitzke" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> @jacobklitzke</a>
+                    <a class="nav-link" href="https://linkedin.com/in/jacobklitzke" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> /in/jacobklitzke</a>
+                    <a class="nav-link" href="mailto:jacobklitzke@gmail.com?Subject=Hi%20Jacob" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i> Email Me!</a>
+                    <a class="nav-link" href="../images/resume.pdf" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Resume</a>
                 </div>
             </md-list-item>
         </md-list>
     </md-sidenav>
-    <span ng-click="openRightMenu()" class="fixed_button"><i class="fa fa-bars fa-2x" ng-class="{icon_color_closed : !opened, icon_color_open : opened}"></i></span>
+    <!--<span ng-click="openRightMenu()" class="fixed-button"><i class="fa fa-bars fa-2x" ng-class="{icon-color-closed : !opened, icon-color-open : opened}"></i></span>-->
+    <span ng-click="openRightMenu()" class="fixed-button"><i class="fa fa-bars fa-2x"></i></span>
     <div id="home" class="title-section">
         <div class="jumbotron">
             <h1 class="display-3 center">Jacob Klitzke</h1>
@@ -53,14 +54,14 @@
         </div>
     </div>
     <div id="profile" class="profile-section">
-        <div class="profile_header_size">
-            <h1 class="display-4 section_header">Profile</h1>
+        <div class="profile-header-size">
+            <h1 class="display-4 section-header">Profile</h1>
             <hr width="50%" class="my-1 center">
             <p class="lead center">A forward thinking, creative, computer engineer</p>
         </div>
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3 section-subsection">
+            <div class="col-md-3">
                 <p class="section-subhead">About Me</p>
                 <p>
                     I am a professional computer engineer who loves exploring new technologies and learning about the latest innovations in the industry. This love of exploration has led to the devlopment of skills in many different areas. My first passion is networking
@@ -68,9 +69,9 @@
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="profile_image" src="../images/profile.jpg" />
+                <img class="profile-image" src="../images/profile.jpg" />
             </div>
-            <div class="col-md-3 profile-subsection">
+            <div class="col-md-3">
                 <p class="section-subhead">Highlights</p>
                 <p><b>Location:</b><br />
                     <i class="fa fa-map-marker"></i> Raleigh, NC<br /></p>
@@ -82,7 +83,7 @@
         </div>
     </div>
     <div id="experience" class="experience-section">
-        <h1 class="display-4 section_header">Experience</h1>
+        <h1 class="display-4 section-header">Experience</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="false">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -96,20 +97,19 @@
                             <div class="col">
                                 <div style="padding-right: 10px;">
                                     <div style="float: left;">
-                                        <img class="exp_circle" src="../images/cisco.png" />
+                                        <img class="exp-circle" src="../images/cisco.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">Cisco Systems</h1>
                                     </div>
                                 </div>
-                                <hr align="left" width="90%" class="break_line" />
-                                <div class="info_line">
+                                <hr align="left" width="90%" class="break-line" />
+                                <div class="info-line">
                                     <i class="fa fa-clock-o" aria-hidden="true"></i> July 2017 - Present
                                     <span class="line">|</span>
                                     <i class="fa fa-map-marker" aria-hidden="true"></i> Dallas, TX
                                     <span class="line">|</span>
-                                    <i class="fa fa-link" aria-hidden="true"></i>
-                                    <a href="https://cisco.com" target="_blank">Cisco</a>
+                                    <a class="exp-line" href="https://cisco.com" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> Cisco</a>
                                 </div>
                                 <div>
                                     <h5>Customer Support Engineer</h5>
@@ -122,21 +122,20 @@
                             <div class="col">
                                 <div style="padding-right: 10px;">
                                     <div style="float: left;">
-                                        <img class="exp_circle" src="../images/netapp.png" />
+                                        <img class="exp-circle" src="../images/netapp.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">NetApp</h1>
                                     </div>
                                 </div>
 
-                                <hr align="left" width="90%" class="break_line" />
-                                <div class="info_line">
+                                <hr align="left" width="90%" class="break-line" />
+                                <div class="info-line">
                                     <i class="fa fa-clock-o" aria-hidden="true"></i> March 2016 - June 2017
                                     <span class="line">|</span>
                                     <i class="fa fa-map-marker" aria-hidden="true"></i> Wichita, KS
                                     <span class="line">|</span>
-                                    <i class="fa fa-link" aria-hidden="true"></i>
-                                    <a href="https://netapp.com" target="_blank">NetApp</a>
+                                    <a class="exp-line" href="https://netapp.com" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> NetApp</a>
                                 </div>
                                 <div>
                                     <h5>QA Contractor</h5>
@@ -155,20 +154,19 @@
                             <div class="col">
                                 <div style="padding-right: 10px;">
                                     <div style="float: left;">
-                                        <img class="exp_circle" src="../images/ennovar.png" />
+                                        <img class="exp-circle" src="../images/ennovar.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">Ennovar</h1>
                                     </div>
                                 </div>
-                                <hr align="left" width="90%" class="break_line" />
-                                <div class="info_line">
+                                <hr align="left" width="90%" class="break-line" />
+                                <div class="info-line">
                                     <i class="fa fa-clock-o" aria-hidden="true"></i> March 2015 - March 2016
                                     <span class="line">|</span>
                                     <i class="fa fa-map-marker" aria-hidden="true"></i> Wichita, KS
                                     <span class="line">|</span>
-                                    <i class="fa fa-link" aria-hidden="true"></i>
-                                    <a href="http://wichita.edu/ennovar" target="_blank">Ennovar</a>
+                                    <a class="exp-line" href="http://wichita.edu/ennovar" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> Ennovar</a>
                                 </div>
                                 <div>
                                     <h5>Solutions Test Validation Engineer</h5>
@@ -182,21 +180,20 @@
                             <div class="col">
                                 <div style="padding-right: 10px;">
                                     <div style="float: left;">
-                                        <img class="exp_circle" src="../images/ennovar.png" />
+                                        <img class="exp-circle" src="../images/ennovar.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">Ennovar</h1>
                                     </div>
                                 </div>
 
-                                <hr align="left" width="90%" class="break_line" />
-                                <div class="info_line">
+                                <hr align="left" width="90%" class="break-line" />
+                                <div class="info-line">
                                     <i class="fa fa-clock-o" aria-hidden="true"></i> August 2014 - March 2016
                                     <span class="line">|</span>
                                     <i class="fa fa-map-marker" aria-hidden="true"></i> Wichita, KS
                                     <span class="line">|</span>
-                                    <i class="fa fa-link" aria-hidden="true"></i>
-                                    <a href="http://wichita.edu/ennovar" target="_blank">Ennovar</a>
+                                    <a class="exp-line" href="http://wichita.edu/ennovar" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> Ennovar</a>
                                 </div>
                                 <div>
                                     <h5>Network Engineer</h5>
@@ -216,20 +213,19 @@
                             <div class="col">
                                 <div style="padding-right: 10px;">
                                     <div style="float: left;">
-                                        <img class="exp_circle" src="../images/ennovar.png" />
+                                        <img class="exp-circle" src="../images/ennovar.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">Ennovar</h1>
                                     </div>
                                 </div>
-                                <hr align="left" width="90%" class="break_line" />
-                                <div class="info_line">
+                                <hr align="left" width="90%" class="break-line" />
+                                <div class="info-line">
                                     <i class="fa fa-clock-o" aria-hidden="true"></i> May 2014 - March 2015
                                     <span class="line">|</span>
                                     <i class="fa fa-map-marker" aria-hidden="true"></i> Wichita, KS
                                     <span class="line">|</span>
-                                    <i class="fa fa-link" aria-hidden="true"></i>
-                                    <a href="http://wichita.edu/ennovar" target="_blank">Ennovar</a>
+                                    <a class="exp-line" href="http://wichita.edu/ennovar" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> Ennovar</a>
                                 </div>
                                 <div>
                                     <h5>Software Developer</h5>
@@ -257,7 +253,7 @@
         </div>
     </div>
     <div id="skills" class="skills-section">
-        <h1 class="display-4 section_header">Skills</h1>
+        <h1 class="display-4 section-header">Skills</h1>
         <hr width="50%" class="my-1 center">
         <div class="row d-flex justify-content-center">
             <div class="col-md-4 pr-4">
@@ -265,7 +261,7 @@
                     <div class="row">
                         <li class="col-md-6 section-subhead">Networking</li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Switching</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -275,7 +271,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Routing</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -285,7 +281,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Security (ASA)</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -295,7 +291,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Network Troubleshooting</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -305,7 +301,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Network Automation</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -322,7 +318,7 @@
                     <div class="row">
                         <li class="col-md-6 section-subhead">Programming</li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Java</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -332,7 +328,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">NodeJS</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -342,7 +338,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">AngularJS</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -352,7 +348,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Python</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -362,7 +358,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">PHP</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -372,7 +368,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">C++</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -391,7 +387,7 @@
                     <div class="row">
                         <li class="col-md-6 section-subhead">OS</li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Linux</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -401,7 +397,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Windows Server (AD)</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -411,7 +407,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">IOS</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -421,7 +417,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">GPFS</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -438,7 +434,7 @@
                     <div class="row">
                         <li class="col-md-6 section-subhead">IDEs</li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Eclipse</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -448,7 +444,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">LiClipse</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -458,7 +454,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Atom</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -477,7 +473,7 @@
                     <div class="row">
                         <li class="col-md-6 section-subhead">Technical</li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Technical Writing</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -487,7 +483,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Agile Methodologies</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -497,7 +493,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Automation</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -507,7 +503,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Algorithm Design</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -524,7 +520,7 @@
                     <div class="row">
                         <li class="col-md-6 section-subhead">QA</li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Test Execution</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -534,7 +530,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Performance Tuning</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -544,7 +540,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Test Automation</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -554,7 +550,7 @@
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Bug tracking</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -573,7 +569,7 @@
                     <div class="row">
                         <li class="col-md-6 section-subhead">Storage</li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Data Storage Architecture</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -583,7 +579,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">RAID</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -593,7 +589,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">NetApp E-Series Storage</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -603,7 +599,7 @@
                             <i class="fa fa-star"></i>
                         </li>
                     </div>
-                    <div class="row light_up">
+                    <div class="row light-up">
                         <li class="col-md-6 py-1">Fibre Channel/iSCSI Protocols</li>
                         <li class="col-md-6 text-right">
                             <i class="fa fa-star"></i>
@@ -619,7 +615,7 @@
         </div>
     </div>
     <div id="projects" class="projects-section">
-        <h1 class="display-4 section_header">Projects</h1>
+        <h1 class="display-4 section-header">Projects</h1>
         <hr width="50%" class="my-1 center">
         <div class="row d-flex justify-content-center">
             <div class="col-md-4 p-3" ng-click="go('https://github.com/jacobklitzke/RICH')">
@@ -628,7 +624,7 @@
                     <div class="showme card-img-overlay">
                         <div class="animated slideInLeft">
                             <p class="card-heading">RICH</p>
-                            <hr align="left" class="card_line" />
+                            <hr align="left" class="card-line" />
                         </div>
                         <div class="animated slideInRight">
                             <p>The Remote Integrated Control Hub (RICH) was a NodeJS and Angular project which allowed a user
@@ -644,7 +640,7 @@
                     <div class="showme card-img-overlay">
                         <div class="animated slideInLeft">
                             <p class="card-heading">Website</p>
-                            <hr align="left" class="card_line" />
+                            <hr align="left" class="card-line" />
                         </div>
                         <div class="animated slideInRight">
                             <p>The code for this website, which is written using AngualarJS and Node JS. The production
@@ -661,7 +657,7 @@
                     <div class="showme card-img-overlay">
                         <div class="animated slideInLeft">
                             <p class="card-heading">Movie Finder</p>
-                            <hr align="left" class="card_line" />
+                            <hr align="left" class="card-line" />
                         </div>
                         <div class="animated slideInRight">
                             <p>This program is written in AngularJS and NodeJS and searches eBay to find movies a user is interested in
@@ -676,7 +672,7 @@
                     <div class="showme card-img-overlay">
                         <div class="animated slideInLeft">
                             <p class="card-heading">GPFS Script</p>
-                            <hr align="left" class="card_line" />
+                            <hr align="left" class="card-line" />
                         </div>
                         <div class="animated slideInRight">
                             <p>This bash script is used for performing I/O benchmarking on a GPFS filesystem with IOR.
@@ -688,16 +684,16 @@
         </div>
     </div>
     <div id="contact" class="contact-section">
-        <h1 class="display-4 center section_header">Contact</h1>
+        <h1 class="display-4 center section-header">Contact</h1>
         <hr width="50%" class="my-1 center">
         <div class="row d-flex justify-content-center">
             <div class="col-md-2">
-                <a class="contact_links" href="https://twitter.com/jacobklitzke" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> @jacobklitzke</a><br />
-                <a class="contact_links" href="https://linkedin.com/in/jacobklitzke" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> /in/jacobklitzke</a>
+                <a class="contact-links" href="https://twitter.com/jacobklitzke" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> @jacobklitzke</a><br />
+                <a class="contact-links" href="https://linkedin.com/in/jacobklitzke" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> /in/jacobklitzke</a>
             </div>
             <div class="col-md-2">
-                <a class="contact_links" href="mailto:jacobklitzke@gmail.com?Subject=Hi%20Jacob" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i> Email Me!</a><br />
-                <a class="contact_links" href="../images/resume.pdf" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Resume</a>
+                <a class="contact-links" href="mailto:jacobklitzke@gmail.com?Subject=Hi%20Jacob" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i> Email Me!</a><br />
+                <a class="contact-links" href="../images/resume.pdf" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Resume</a>
             </div>
         </div>
     </div>

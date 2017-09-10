@@ -11,6 +11,7 @@ app.use('/material', express.static(__dirname + '/node_modules/angular-material'
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery'));
 app.use('/fonts', express.static(__dirname + '/node_modules/font-awesome'));
+app.use('/cssanimate', express.static(__dirname + '/node_modules/animate.css'));
 app.use('/styles', express.static(__dirname + '/styles'));
 app.use('/images', express.static(__dirname + '/images'));
 app.use('/scroll', express.static(__dirname + '/node_modules/angular-scroll'));

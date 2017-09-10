@@ -21,17 +21,27 @@
     <link rel="stylesheet" href="/material/angular-material.min.css" />
     <link rel="stylesheet" href="/fonts/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="/cssanimate/animate.min.css" />
 </head>
 
 <body ng-controller="mainPageCtrl">
-    <md-sidenav md-component-id="right" class="md-sidenav-right sidenav-float">
+    <md-sidenav md-component-id="right" class="md-sidenav-right sidenav-float sidenav">
         <md-list>
             <md-list-item><a href="#home" class="md-headline" ng-click="scrollToSection('home')">Home</a></md-list-item>
             <md-list-item><a href="#profile" class="md-headline" ng-click="scrollToSection('profile')">Profile</a></md-list-item>
             <md-list-item><a href="#experience" class="md-headline" ng-click="scrollToSection('experience')">Experience</a></md-list-item>
             <md-list-item><a href="#skills" class="md-headline" ng-click="scrollToSection('skills')">Skills</a></md-list-item>
             <md-list-item><a href="#projects" class="md-headline" ng-click="scrollToSection('projects')">Projects</a></md-list-item>
-            <md-list-item><a href="#contact" class="md-headline" ng-click="scrollToSection('contact')">Contact</a></md-list-item>
+            <md-list-item class="list-border"><a href="#contact" class="md-headline" ng-click="scrollToSection('contact')">Blog</a></md-list-item>
+            <md-list-item class="md-3-line">
+                <div class="md-list-item-text" layout="column">
+                    <h1 class="md-headline">Contact:</h1>
+                    <a class="nav_link" href="https://twitter.com/jacobklitzke" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> @jacobklitzke</a>
+                    <a class="nav_link" href="https://linkedin.com/in/jacobklitzke" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> /in/jacobklitzke</a>
+                    <a class="nav_link" href="mailto:jacobklitzke@gmail.com?Subject=Hi%20Jacob" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i> Email Me!</a>
+                    <a class="nav_link" href="../images/resume.pdf" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Resume</a>
+                </div>
+            </md-list-item>
         </md-list>
     </md-sidenav>
     <span ng-click="openRightMenu()" class="fixed_button"><i class="fa fa-bars fa-2x" ng-class="{icon_color_closed : !opened, icon_color_open : opened}"></i></span>
@@ -53,26 +63,20 @@
             <div class="col-md-3 section-subsection">
                 <p class="section-subhead">About Me</p>
                 <p>
-                    I am a professional computer engineer who loves exploring new technologies and learning about the latest
-                    innovations in the industry. This love of exploration has led to the devlopment of skills in many different
-                    areas. My first passion is networking and troubleshooting, but I also enjoy programming, especially automation.
-                    Outside of my professional life, I enjoy watching movies and playing tennis.
+                    I am a professional computer engineer who loves exploring new technologies and learning about the latest innovations in the industry. This love of exploration has led to the devlopment of skills in many different areas. My first passion is networking
+                    and troubleshooting, but I also enjoy programming, especially automation. Outside of my professional life, I enjoy watching movies and playing tennis.
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="profile_image" src="../images/profile.jpg"/>
+                <img class="profile_image" src="../images/profile.jpg" />
             </div>
             <div class="col-md-3 profile-subsection">
                 <p class="section-subhead">Highlights</p>
                 <p><b>Location:</b><br />
-                <i class="fa fa-map-marker"></i>
-                Raleigh, NC<br /></p>
-                <p><b>Education:</b><br />
-                BS - Computer Engineering<br />
-                <i class="fa fa-map"></i>
-                Wichita State University | Wichita, KS<br /></p>
-                <p><b>Certifications:</b><br />
-                &bull; CCNA Route/Switch<br /></p>
+                    <i class="fa fa-map-marker"></i> Raleigh, NC<br /></p>
+                <p><b>Education:</b><br /> BS - Computer Engineering<br />
+                    <i class="fa fa-map"></i> Wichita State University | Wichita, KS<br /></p>
+                <p><b>Certifications:</b><br /> &bull; CCNA Route/Switch<br /></p>
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -92,7 +96,7 @@
                             <div class="col">
                                 <div style="padding-right: 10px;">
                                     <div style="float: left;">
-                                        <img class="exp_circle" src="../images/cisco.png"/>
+                                        <img class="exp_circle" src="../images/cisco.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">Cisco Systems</h1>
@@ -109,20 +113,16 @@
                                 </div>
                                 <div>
                                     <h5>Customer Support Engineer</h5>
-                                    <p class="hide-mobile">For my first position after graduating college, I joined Cisco as a customer support
-                                    engineer. This role requires strong troubleshooting skills in a fast-paced, innovation driven environment.
-                                    I joined the security team which supports both Cisco Firewall and FIREPower products. The main objective of this team is
-                                    troubleshoot and resolve complex customer issues pertaining to those products. Additionally, the team contributes technical content to a
-                                    knowledge base to provide further support to customers. <br /><br />
-                                    This position requires extremely good communication skills, the ability to work on several
-                                    projects seemingly at the same time, technical writing skills, an innovation driven attitude,
-                                    and the ability to solve complex customer issues under pressure.</p>
+                                    <p class="hide-mobile">For my first position after graduating college, I joined Cisco as a customer support engineer. This role requires strong troubleshooting skills in a fast-paced, innovation driven environment. I joined the security team
+                                        which supports both Cisco Firewall and FIREPower products. The main objective of this team is troubleshoot and resolve complex customer issues pertaining to those products. Additionally, the team contributes technical
+                                        content to a knowledge base to provide further support to customers. <br /><br /> This position requires extremely good communication skills, the ability to work on several projects seemingly at the same time, technical
+                                        writing skills, an innovation driven attitude, and the ability to solve complex customer issues under pressure.</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div style="padding-right: 10px;">
                                     <div style="float: left;">
-                                        <img class="exp_circle" src="../images/netapp.png"/>
+                                        <img class="exp_circle" src="../images/netapp.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">NetApp</h1>
@@ -140,16 +140,10 @@
                                 </div>
                                 <div>
                                     <h5>QA Contractor</h5>
-                                    <p class="hide-mobile">As a senior in college, I joined a team responsible for testing
-                                    and validating the software and firmware associated with NetApp E-series products. The
-                                    main objective of this team is to ensure that NetApp E-series software and firmware is stable and provides
-                                    the end-user with a high-quality, enterprise-grade product. <br /><br />
-                                    This position required excellent teamwork and communication, a strong understanding of
-                                    NetApp E-series storage, knowledge of both Windows Server and popular Linux server
-                                    distributions, an understanding of optimal E-series storage topologies, knowledge of the
-                                    popular applications for E-series devices, the ability to perform basic troubleshooting
-                                    of E-series storage, and the ability to work on multiple projects at once while still meeting
-                                    important deadlines. </p>
+                                    <p class="hide-mobile">As a senior in college, I joined a team responsible for testing and validating the software and firmware associated with NetApp E-series products. The main objective of this team is to ensure that NetApp E-series software
+                                        and firmware is stable and provides the end-user with a high-quality, enterprise-grade product. <br /><br /> This position required excellent teamwork and communication, a strong understanding of NetApp E-series
+                                        storage, knowledge of both Windows Server and popular Linux server distributions, an understanding of optimal E-series storage topologies, knowledge of the popular applications for E-series devices, the ability
+                                        to perform basic troubleshooting of E-series storage, and the ability to work on multiple projects at once while still meeting important deadlines. </p>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +155,7 @@
                             <div class="col">
                                 <div style="padding-right: 10px;">
                                     <div style="float: left;">
-                                        <img class="exp_circle" src="../images/ennovar.png"/>
+                                        <img class="exp_circle" src="../images/ennovar.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">Ennovar</h1>
@@ -178,24 +172,17 @@
                                 </div>
                                 <div>
                                     <h5>Solutions Test Validation Engineer</h5>
-                                    <p class="hide-mobile">As a junior in college, I joined a team sponsored by NetApp
-                                    responsible for testing, validating, and publishing information regarding the
-                                    capabilities of various manufacturer's storage equipment. These manufacturers include:
-                                    NetApp, Dell, and IBM. Microsoft Exchange, vRanger, and IBM Spectrum Scale
-                                    (High Performance Computing) are examples of the technologies that were tested by this
-                                    team.<br /><br />
-                                    This position required excellent teamwork, strong technical writing skills,
-                                    an understanding of storage systems and their related terminologies and topologies,
-                                    knowledge of Windows Server 2012 and Linux configurations, deep understanding of all
-                                    software and testing environments of each project as well as their associated best
-                                    practices and optimal configurations, and the ability to translate difficult
-                                    engineering terminology to easy-to-read technical articles. </p>
+                                    <p class="hide-mobile">As a junior in college, I joined a team sponsored by NetApp responsible for testing, validating, and publishing information regarding the capabilities of various manufacturer's storage equipment. These manufacturers
+                                        include: NetApp, Dell, and IBM. Microsoft Exchange, vRanger, and IBM Spectrum Scale (High Performance Computing) are examples of the technologies that were tested by this team.
+                                        <br /><br /> This position required excellent teamwork, strong technical writing skills, an understanding of storage systems and their related terminologies and topologies, knowledge of Windows Server 2012 and Linux
+                                        configurations, deep understanding of all software and testing environments of each project as well as their associated best practices and optimal configurations, and the ability to translate difficult engineering
+                                        terminology to easy-to-read technical articles. </p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div style="padding-right: 10px;">
                                     <div style="float: left;">
-                                        <img class="exp_circle" src="../images/ennovar.png"/>
+                                        <img class="exp_circle" src="../images/ennovar.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">Ennovar</h1>
@@ -213,18 +200,11 @@
                                 </div>
                                 <div>
                                     <h5>Network Engineer</h5>
-                                    <p class="hide-mobile">As a sophomore, I was assigned to a team responsible for
-                                    creating, configuring, and maintaining the network at Ennovar. Almost all of the
-                                    networking equipment at Ennovar is Cisco equipment. This team implemented networking
-                                    technologies such as L3 switching, ACLs, NAT, HSRP, VPC, and VPNs. This team was also
-                                    responsible for diagnosing and resolving any networking issues that occurred at Ennovar.
-                                    <br /><br />
-                                    This position requires a strong understanding of networking concepts, including routing,
-                                    switching, and security; the ability to effectively configure and troubleshoot Cisco
-                                    networking equipment via the command line interface; a high degree of knowledge of the
-                                    configuration and security policies associated with Windows Server 2012; a fundamental
-                                    understanding of the configuration options of ESXi; and knowledge of Apache web servers,
-                                    PHP, and mediaWiki configuration options.</p>
+                                    <p class="hide-mobile">As a sophomore, I was assigned to a team responsible for creating, configuring, and maintaining the network at Ennovar. Almost all of the networking equipment at Ennovar is Cisco equipment. This team implemented networking
+                                        technologies such as L3 switching, ACLs, NAT, HSRP, VPC, and VPNs. This team was also responsible for diagnosing and resolving any networking issues that occurred at Ennovar.
+                                        <br /><br /> This position requires a strong understanding of networking concepts, including routing, switching, and security; the ability to effectively configure and troubleshoot Cisco networking equipment via
+                                        the command line interface; a high degree of knowledge of the configuration and security policies associated with Windows Server 2012; a fundamental understanding of the configuration options of ESXi; and knowledge
+                                        of Apache web servers, PHP, and mediaWiki configuration options.</p>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +216,7 @@
                             <div class="col">
                                 <div style="padding-right: 10px;">
                                     <div style="float: left;">
-                                        <img class="exp_circle" src="../images/ennovar.png"/>
+                                        <img class="exp_circle" src="../images/ennovar.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">Ennovar</h1>
@@ -253,19 +233,11 @@
                                 </div>
                                 <div>
                                     <h5>Software Developer</h5>
-                                    <p class="hide-mobile"> As a sophomore in college, I was assigned to a team
-                                    responsible for the development of an automated method of applying a storage array
-                                    configuration, which has many configurable options and settings, to a device. This
-                                    project was a partnership between NetApp and Ennovar. There were many different
-                                    tools NetApp used to accomplish the task of applying a configuration to a storage
-                                    array, but there was no easy way to move the configuration from a workstation to a
-                                    storage array. The goal of our project was to automate the process of reading the
-                                    configuration data from a database and applying it to an array<br /><br />
-                                    This position required strong programming skills, especially in Java; an excellent
-                                    knowledge of how to implement algorithms efficiently in code; the ability to thoroughly
-                                    test and validate code; the ability to analyze and translate code from one language
-                                    to another; and the ability to write clean, understandable code that would allow other
-                                    developers to easily understand what the code was doing.</p>
+                                    <p class="hide-mobile"> As a sophomore in college, I was assigned to a team responsible for the development of an automated method of applying a storage array configuration, which has many configurable options and settings, to a device. This
+                                        project was a partnership between NetApp and Ennovar. There were many different tools NetApp used to accomplish the task of applying a configuration to a storage array, but there was no easy way to move the configuration
+                                        from a workstation to a storage array. The goal of our project was to automate the process of reading the configuration data from a database and applying it to an array<br /><br /> This position required strong
+                                        programming skills, especially in Java; an excellent knowledge of how to implement algorithms efficiently in code; the ability to thoroughly test and validate code; the ability to analyze and translate code from
+                                        one language to another; and the ability to write clean, understandable code that would allow other developers to easily understand what the code was doing.</p>
                                 </div>
                             </div>
                             <div class="col">
@@ -289,320 +261,447 @@
         <hr width="50%" class="my-1 center">
         <div class="row d-flex justify-content-center">
             <div class="col-md-4 pr-4">
-                    <ul class="list-unstyled">
-                        <div class="row">
-                            <li class="col-md-6 section-subhead">Networking</li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Switching</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Routing</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Security (ASA)</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Network Troubleshooting</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Network Automation</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                    </ul>
+                <ul class="list-unstyled">
+                    <div class="row">
+                        <li class="col-md-6 section-subhead">Networking</li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Switching</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Routing</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Security (ASA)</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Network Troubleshooting</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Network Automation</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                </ul>
             </div>
             <div class="col-md-4 pr-4">
-                    <ul class="list-unstyled">
-                        <div class="row">
-                            <li class="col-md-6 section-subhead">Programming</li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Java</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">NodeJS</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Angular</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Python</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Bash</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">C++</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                    </ul>
+                <ul class="list-unstyled">
+                    <div class="row">
+                        <li class="col-md-6 section-subhead">Programming</li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Java</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">NodeJS</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">AngularJS</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Python</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">PHP</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">C++</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                </ul>
             </div>
-
         </div>
         <div class="row d-flex justify-content-center">
             <div class="col-md-4 pr-4">
-                    <ul class="list-unstyled">
-                        <div class="row">
-                            <li class="col-md-6 section-subhead">Networking</li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Switching</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Routing</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Security (ASA)</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Network Troubleshooting</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Network Automation</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                    </ul>
+                <ul class="list-unstyled">
+                    <div class="row">
+                        <li class="col-md-6 section-subhead">OS</li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Linux</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Windows Server (AD)</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">IOS</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">GPFS</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                </ul>
             </div>
             <div class="col-md-4 pr-4">
-                    <ul class="list-unstyled">
-                        <div class="row">
-                            <li class="col-md-6 section-subhead">Programming</li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Java</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">NodeJS</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Angular</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Python</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">Bash</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                        <div class="row light_up">
-                            <li class="col-md-6 py-1">C++</li>
-                            <li class="col-md-6 text-right">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </div>
-                    </ul>
+                <ul class="list-unstyled">
+                    <div class="row">
+                        <li class="col-md-6 section-subhead">IDEs</li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Eclipse</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">LiClipse</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Atom</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                </ul>
             </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 pr-4">
+                <ul class="list-unstyled">
+                    <div class="row">
+                        <li class="col-md-6 section-subhead">Technical</li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Technical Writing</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Agile Methodologies</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Automation</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Algorithm Design</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-md-4 pr-4">
+                <ul class="list-unstyled">
+                    <div class="row">
+                        <li class="col-md-6 section-subhead">QA</li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Test Execution</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Performance Tuning</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Test Automation</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Bug tracking</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 pr-4">
+                <ul class="list-unstyled">
+                    <div class="row">
+                        <li class="col-md-6 section-subhead">Storage</li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Data Storage Architecture</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">RAID</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">NetApp E-Series Storage</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row light_up">
+                        <li class="col-md-6 py-1">Fibre Channel/iSCSI Protocols</li>
+                        <li class="col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-md-4 pr-4"></div>
         </div>
     </div>
     <div id="projects" class="projects-section">
-        <h1 class="display-3 center">Projects</h1>
-        <h2 class="sub-header">"I've found that small wins, small projects, small differences often make huge differences."
-          <br> - Rosabeth Moss Kanter</h2>
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-lg-4">
-                <!-- <img class="img-circle" src="http://mtandt.com/wp-content/uploads/revslider/customerserive/grey-circle-.png" alt="Generic placeholder image" width="140" height="140"> -->
-                <div class="card" style="width: 20rem;">
-                    <div class="card-block">
-                        <a href="http://google.com" target="_blank" class="card-title">Project #1</a>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <!-- <a href="#" class="btn btn-primary">Git Repository</a> -->
+        <h1 class="display-4 section_header">Projects</h1>
+        <hr width="50%" class="my-1 center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 p-3">
+                <div class="card showhim" style="height: 15rem; overflow: hidden;">
+                    <img class="card-img" src="../images/rich.png">
+                    <div class="showme card-img-overlay">
+                        <div class="animated slideInLeft">
+                            <p class="card-heading">Marketing</p>
+                            <hr align="left" class="card_line" />
+                        </div>
+                        <div class="animated slideInRight">
+                            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!.</p>
+                            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
                     </div>
                 </div>
-                <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
             </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <!-- <img class="img-circle" src="http://mtandt.com/wp-content/uploads/revslider/customerserive/grey-circle-.png" alt="Generic placeholder image" width="140" height="140"> -->
-                <div class="card" style="width: 20rem;">
-                    <div class="card-block">
-                        <a href="http://google.com" target="_blank" class="card-title">Project #2</a>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <!-- <a href="#" class="btn btn-primary">Git Repository</a> -->
+            <div class="col-md-4 p-3">
+                <div class="card showhim" style="height: 15rem; overflow: hidden;">
+                    <img class="card-img" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg">
+                    <div class="showme card-img-overlay">
+                        <div class="animated slideInLeft">
+                            <p class="card-heading">Marketing</p>
+                            <hr align="left" class="card_line" />
+                        </div>
+                        <div class="animated slideInRight">
+                            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!.</p>
+                            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
                     </div>
                 </div>
-                <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
             </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <!-- <img class="img-circle" src="http://mtandt.com/wp-content/uploads/revslider/customerserive/grey-circle-.png" alt="Generic placeholder image" width="140" height="140"> -->
-                <div class="card" style="width: 20rem;">
-                    <div class="card-block">
-                        <a href="http://google.com" target="_blank" class="card-title">Project #3</a>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <!-- <a href="#" class="btn btn-primary">Git Repository</a> -->
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 p-3">
+                <div class="card showhim" style="height: 15rem; overflow: hidden;">
+                    <img class="card-img" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg">
+                    <div class="showme card-img-overlay">
+                        <div class="animated slideInLeft">
+                            <p class="card-heading">Marketing</p>
+                            <hr align="left" class="card_line" />
+                        </div>
+                        <div class="animated slideInRight">
+                            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!.</p>
+                            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
                     </div>
                 </div>
-                <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
             </div>
-            <!-- /.col-lg-4 -->
+            <div class="col-md-4 p-3">
+                <div class="card showhim" style="height: 15rem; overflow: hidden;">
+                    <img class="card-img" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg">
+                    <div class="showme card-img-overlay">
+                        <div class="animated slideInLeft">
+                            <p class="card-heading">Marketing</p>
+                            <hr align="left" class="card_line" />
+                        </div>
+                        <div class="animated slideInRight">
+                            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!.</p>
+                            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="contact" class="contact-section">
         <h1 class="display-4 center section_header">Contact</h1>
         <hr width="50%" class="my-1 center">
-        <div>
-            <i align="center" class="fa fa-twitter" style="color: #141414;" aria-hidden="true"></i>
-            <a class="contact_links" href="https://twitter.com/jacobklitzke" target="_blank">@jacobklitzke</a>
-        </div>
-        <div>
-            <i align="center" class="fa fa-linkedin" style="color: #141414;" aria-hidden="true"></i>
-            <a class="contact_links" href="https://linkedin.com/in/jacobklitzke" target="_blank">/in/jacobklitzke</a>
-        </div>
-        <div>
-            <i align="center" class="fa fa-paper-plane" style="color: #141414;" aria-hidden="true"></i>
-            <a class="contact_links" href="mailto:jacobklitzke@gmail.com?Subject=Hi%20Jacob" target="_blank">Email Me!</a>
-        </div>
-        <div>
-            <i align="center" class="fa fa-book" style="color: #141414;" aria-hidden="true"></i>
-            <a class="contact_links" href="../images/resume.pdf" target="_blank">Resume</a>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-2">
+                <a class="contact_links" href="https://twitter.com/jacobklitzke" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> @jacobklitzke</a><br />
+                <a class="contact_links" href="https://linkedin.com/in/jacobklitzke" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> /in/jacobklitzke</a>
+            </div>
+            <div class="col-md-2">
+                <a class="contact_links" href="mailto:jacobklitzke@gmail.com?Subject=Hi%20Jacob" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i> Email Me!</a><br />
+                <a class="contact_links" href="../images/resume.pdf" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Resume</a>
+            </div>
         </div>
     </div>
 </body>

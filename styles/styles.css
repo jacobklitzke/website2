@@ -3,19 +3,32 @@ html, body {
   margin: 0px;
 }
 
-a {
-
-    color: black;
+.md-sidenav-right a {
+  color: #f9f9f2;
 }
 
-a:hover {
-  color: black;
+.list-border {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #f9f9f2;
+}
+
+a.nav_link {
+  color: #f9f9f2;
+}
+
+a.nav_link:hover {
+  color: #141414;
 }
 
 .fixed_button {
   position: fixed;
   right: 1%;
   z-index: 9999;
+}
+
+.sidenav {
+  background-color: #69f0ae;
 }
 
 .sidenav-float {
@@ -105,7 +118,7 @@ a:hover {
 .projects-section {
   height: auto;
   background-color: #e8e8e8;
-  opacity: 1.0;
+  position: relative;
   padding: 0px 50px 50px 50px;
 }
 
@@ -205,6 +218,13 @@ h1 {
   color: #1c1c1c;
 }
 
+.card-heading {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: white;
+}
+
 .info_line {
   font-size: 1rem;
   font-weight: 300;
@@ -220,5 +240,45 @@ a.contact_links {
 }
 
 a.contact_links:hover {
+  color: #17a7b5;
+}
+
+.showme {
+  display: none;
+}
+
+.showhim:hover .showme {
+  display: grid;
+  background-color: rgba(23,161,185,0.3);
+}
+
+.showhim:hover .showme .card_line{
+  background-color: white;
+  height: 0.1rem;
+  padding: 0;
+  width: 90%;
+}
+
+.showhim:hover .showme .slideInLeft {
+	-webkit-animation-duration: 0.5s;
+	   -moz-animation-duration: 0.5s;
+	    -ms-animation-duration: 0.5s;
+	     -o-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
+}
+
+.showhim:hover .showme .slideInRight {
+	-webkit-animation-duration: 0.5s;
+	   -moz-animation-duration: 0.5s;
+	    -ms-animation-duration: 0.5s;
+	     -o-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
+}
+
+.contact-section a {
+  color: black;
+}
+
+.contact-section a:hover {
   color: #17a7b5;
 }

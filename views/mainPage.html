@@ -17,7 +17,7 @@
     <script src="/scroll/angular-scroll.min.js"></script>
 
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/styles/styles.min.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/material/angular-material.min.css" />
     <link rel="stylesheet" href="/fonts/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
@@ -27,12 +27,13 @@
 <body ng-controller="mainPageCtrl">
     <md-sidenav md-component-id="right" class="md-sidenav-right sidenav-float sidenav">
         <md-list>
-            <md-list-item><a href="#home" class="md-headline" ng-click="scrollToSection('home')">Home</a></md-list-item>
-            <md-list-item><a href="#profile" class="md-headline" ng-click="scrollToSection('profile')">Profile</a></md-list-item>
-            <md-list-item><a href="#experience" class="md-headline" ng-click="scrollToSection('experience')">Experience</a></md-list-item>
-            <md-list-item><a href="#skills" class="md-headline" ng-click="scrollToSection('skills')">Skills</a></md-list-item>
-            <md-list-item><a href="#projects" class="md-headline" ng-click="scrollToSection('projects')">Projects</a></md-list-item>
-            <md-list-item class="list-border"><a href="#contact" class="md-headline" ng-click="scrollToSection('contact')">Blog</a></md-list-item>
+            <md-list-item><a href="#home" class="md-headline nav-link" ng-click="scrollToSection('home')">Home</a></md-list-item>
+            <md-list-item><a href="#profile" class="md-headline nav-link" ng-click="scrollToSection('profile')">Profile</a></md-list-item>
+            <md-list-item><a href="#experience" class="md-headline nav-link" ng-click="scrollToSection('experience')">Experience</a></md-list-item>
+            <md-list-item><a href="#skills" class="md-headline nav-link" ng-click="scrollToSection('skills')">Skills</a></md-list-item>
+            <md-list-item><a href="#projects" class="md-headline nav-link" ng-click="scrollToSection('projects')">Projects</a></md-list-item>
+            <md-list-item class="list-border"><a href="#contact" class="md-headline nav-link" ng-click="scrollToSection('contact')">Blog</a></md-list-item>
+            <br />
             <md-list-item class="md-3-line">
                 <div class="md-list-item-text" layout="column">
                     <h1 class="md-headline">Contact:</h1>

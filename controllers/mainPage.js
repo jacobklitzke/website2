@@ -1,4 +1,4 @@
-app.controller('mainPageCtrl', ['$scope', '$mdSidenav', '$document',function($scope, $mdSidenav, $document) {
+app.controller('mainPageCtrl', ['$scope', '$mdSidenav', '$document', '$window', function($scope, $mdSidenav, $document, $window) {
     $scope.test = "Hello World!";
 
     $scope.openRightMenu = function() {
@@ -8,6 +8,10 @@ app.controller('mainPageCtrl', ['$scope', '$mdSidenav', '$document',function($sc
     $scope.scrollToSection = function(elementName) {
         $mdSidenav('right').close();
         $document.scrollToElementAnimated(angular.element(document.getElementById(elementName)), 0, 2000);
+    };
+
+    $scope.go = function(url) {
+        $window.open(url, '_blank');
     };
 
     $scope.$watch(
@@ -22,5 +26,6 @@ app.controller('mainPageCtrl', ['$scope', '$mdSidenav', '$document',function($sc
                 }
             }
         );
+
 
 }]);

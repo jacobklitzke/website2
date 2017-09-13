@@ -55,18 +55,17 @@
         </div>
     </div>
     <div id="profile" class="profile-section">
-        <div class="profile-header-size">
+        <div>
             <h1 class="display-4 section-header">Profile</h1>
             <hr width="50%" class="my-1 center">
             <p class="lead center">A forward thinking, creative, computer engineer</p>
         </div>
-        <div class="row">
-            <div class="col-md-1"></div>
+        <div class="row d-flex justify-content-center">
             <div class="col-md-3">
                 <p class="section-subhead">About Me</p>
                 <p>
-                    I am a professional computer engineer who loves exploring new technologies and learning about the latest innovations in the industry. This love of exploration has led to the devlopment of skills in many different areas. My first passion is networking
-                    and troubleshooting, but I also enjoy programming and automation. Outside of my professional life, I enjoy watching movies and playing tennis.
+                    I am a professional computer engineer who loves exploring new technologies and learning about the latest innovations in the industry. This love of exploration has led to the development of skills in many different areas. My first passion is networking
+                    and troubleshooting, but I also enjoy programming and automation. Outside of my professional life, I enjoy playing tennis and bocce ball, and watching movies and alpacas.
                 </p>
             </div>
             <div class="col-md-4">
@@ -80,29 +79,29 @@
                     <i class="fa fa-map"></i> Wichita State University | Wichita, KS<br /></p>
                 <p><b>Certifications:</b><br /> &bull; CCNA Route/Switch<br /></p>
             </div>
-            <div class="col-md-1"></div>
         </div>
     </div>
     <div id="experience" class="experience-section">
         <h1 class="display-4 section-header">Experience</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="false">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExamplcarousel-alignmenteIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <div class="container carousel-padding">
-                        <div class="row">
-                            <div class="col">
-                                <div style="padding-right: 10px;">
-                                    <div style="float: left;">
-                                        <img class="exp-circle" src="../images/cisco.png" />
-                                    </div>
-                                    <div style="padding-left: 10px; float: left;">
-                                        <h1 class="display-5">Cisco Systems</h1>
-                                    </div>
+                        <div class="row carousel-alignment">
+                            <div class="col-12 col-md-6 align-items-center flex-column">
+                                <!--<div style="float: left;">
+                                    <img class="exp-circle" src="../images/cisco.png" />
+                                </div>
+                                <div style="padding-left: 10px; float: left;">
+                                    <h1 class="display-5">Cisco Systems</h1>
+                                </div>-->
+                                <div>
+                                    <h1 class="display-5"><img class="exp-circle" src="../images/cisco.png" /> Cisco Systems</h1>
                                 </div>
                                 <hr align="left" width="90%" class="break-line" />
                                 <div class="info-line">
@@ -120,16 +119,18 @@
                                         writing skills, an innovation driven attitude, and the ability to solve complex customer issues under pressure.</p>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div style="padding-right: 10px;">
+                            <div class="col-12 col-md-6 align-items-center flex-column">
+                                <!--<div style="padding-right: 10px;">
                                     <div style="float: left;">
                                         <img class="exp-circle" src="../images/netapp.png" />
                                     </div>
                                     <div style="padding-left: 10px; float: left;">
                                         <h1 class="display-5">NetApp</h1>
                                     </div>
+                                </div>-->
+                                <div>
+                                    <h1 class="display-5"><img class="exp-circle" src="../images/netapp.png" /> Netapp</h1>
                                 </div>
-
                                 <hr align="left" width="90%" class="break-line" />
                                 <div class="info-line">
                                     <i class="fa fa-clock-o" aria-hidden="true"></i> March 2016 - June 2017
@@ -260,11 +261,11 @@
             <div class="col-md-4 pr-4">
                 <ul class="list-unstyled">
                     <div class="row">
-                        <li class="col-md-6 section-subhead">Networking</li>
+                        <li class="col-6 col-md-6 section-subhead">Networking</li>
                     </div>
                     <div class="row">
-                        <li class="col-md-6 py-1">Switching</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Switching</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -273,8 +274,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Routing</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Routing</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -283,8 +284,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Security (ASA)</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Security (ASA)</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -293,8 +294,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Network Troubleshooting</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Network Troubleshooting</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -303,8 +304,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Network Automation</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Network Automation</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -317,11 +318,11 @@
             <div class="col-md-4 pr-4">
                 <ul class="list-unstyled">
                     <div class="row">
-                        <li class="col-md-6 section-subhead">Programming</li>
+                        <li class="col-6 col-md-6 section-subhead">Programming</li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Java</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Java</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -330,8 +331,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">NodeJS</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">NodeJS</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -340,8 +341,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">AngularJS</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">AngularJS</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -350,8 +351,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Python</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Python</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -360,8 +361,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">PHP</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">PHP</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -370,98 +371,12 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">C++</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">C++</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-4 pr-4">
-                <ul class="list-unstyled">
-                    <div class="row">
-                        <li class="col-md-6 section-subhead">OS</li>
-                    </div>
-                    <div class="row ">
-                        <li class="col-md-6 py-1">Linux</li>
-                        <li class="col-md-6 text-right">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </li>
-                    </div>
-                    <div class="row ">
-                        <li class="col-md-6 py-1">Windows Server (AD)</li>
-                        <li class="col-md-6 text-right">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </li>
-                    </div>
-                    <div class="row ">
-                        <li class="col-md-6 py-1">IOS</li>
-                        <li class="col-md-6 text-right">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </li>
-                    </div>
-                    <div class="row ">
-                        <li class="col-md-6 py-1">GPFS</li>
-                        <li class="col-md-6 text-right">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-            <div class="col-md-4 pr-4">
-                <ul class="list-unstyled">
-                    <div class="row">
-                        <li class="col-md-6 section-subhead">IDEs</li>
-                    </div>
-                    <div class="row ">
-                        <li class="col-md-6 py-1">Eclipse</li>
-                        <li class="col-md-6 text-right">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </li>
-                    </div>
-                    <div class="row ">
-                        <li class="col-md-6 py-1">LiClipse</li>
-                        <li class="col-md-6 text-right">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </li>
-                    </div>
-                    <div class="row ">
-                        <li class="col-md-6 py-1">Atom</li>
-                        <li class="col-md-6 text-right">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
@@ -472,11 +387,11 @@
             <div class="col-md-4 pr-4">
                 <ul class="list-unstyled">
                     <div class="row">
-                        <li class="col-md-6 section-subhead">Technical</li>
+                        <li class="col-6 col-md-6 section-subhead">OS</li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Technical Writing</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Linux</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -485,32 +400,32 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Agile Methodologies</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Windows Server (AD)</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Automation</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">IOS</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Algorithm Design</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">GPFS</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
                             <i class="fa fa-star-o"></i>
                         </li>
                     </div>
@@ -519,11 +434,11 @@
             <div class="col-md-4 pr-4">
                 <ul class="list-unstyled">
                     <div class="row">
-                        <li class="col-md-6 section-subhead">QA</li>
+                        <li class="col-6 col-md-6 section-subhead">IDEs</li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Test Execution</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Eclipse</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -532,8 +447,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Performance Tuning</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">LiClipse</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -542,18 +457,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Test Automation</li>
-                        <li class="col-md-6 text-right">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </li>
-                    </div>
-                    <div class="row ">
-                        <li class="col-md-6 py-1">Bug tracking</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Atom</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -568,11 +473,11 @@
             <div class="col-md-4 pr-4">
                 <ul class="list-unstyled">
                     <div class="row">
-                        <li class="col-md-6 section-subhead">Storage</li>
+                        <li class="col-6 col-md-6 section-subhead">Technical</li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Data Storage Architecture</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Google-fu</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -581,8 +486,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">RAID</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Technical Writing</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -591,8 +496,8 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">NetApp E-Series Storage</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Agile Methodologies</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -601,8 +506,114 @@
                         </li>
                     </div>
                     <div class="row ">
-                        <li class="col-md-6 py-1">Fibre Channel/iSCSI Protocols</li>
-                        <li class="col-md-6 text-right">
+                        <li class="col-6 col-md-6 py-1">Automation</li>
+                        <li class="col-6 col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row ">
+                        <li class="col-6 col-md-6 py-1">Algorithm Design</li>
+                        <li class="col-6 col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-md-4 pr-4">
+                <ul class="list-unstyled">
+                    <div class="row">
+                        <li class="col-6 col-md-6 section-subhead">QA</li>
+                    </div>
+                    <div class="row ">
+                        <li class="col-6 col-md-6 py-1">Test Execution</li>
+                        <li class="col-6 col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row ">
+                        <li class="col-6 col-md-6 py-1">Performance Tuning</li>
+                        <li class="col-6 col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row ">
+                        <li class="col-6 col-md-6 py-1">Test Automation</li>
+                        <li class="col-6 col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                    <div class="row ">
+                        <li class="col-6 col-md-6 py-1">Bug tracking</li>
+                        <li class="col-6 col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 pr-4">
+                <ul class="list-unstyled">
+                    <div class="row">
+                        <li class="col-6 col-md-6 section-subhead">Storage</li>
+                    </div>
+                    <div class="row ">
+                        <li class="col-6 col-md-6 py-1">Data Storage Architecture</li>
+                        <li class="col-6 col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row ">
+                        <li class="col-6 col-md-6 py-1">RAID</li>
+                        <li class="col-6 col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row ">
+                        <li class="col-6 col-md-6 py-1">NetApp E-Series Storage</li>
+                        <li class="col-6 col-md-6 text-right">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </li>
+                    </div>
+                    <div class="row ">
+                        <li class="col-6 col-md-6 py-1">Fibre Channel/iSCSI Protocols</li>
+                        <li class="col-6 col-md-6 text-right">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -620,28 +631,25 @@
         <hr width="50%" class="my-1 center">
         <div class="row d-flex justify-content-center">
             <div class="col-md-4 p-3" ng-click="go('https://github.com/jacobklitzke/RICH')">
-                <div class="card" style="height: 15rem; overflow: hidden;">
+                <div class="card">
                     <!--<img class="card-img" src="../images/rich.png">-->
                     <div class="card-block">
                         <div>
                             <p class="card-heading">RICH<i class="fa fa-external-link-square" style="float: right;"></i></p>
                             <hr align="left" class="card-line" />
-                            <p style="color: #141414;">The Remote Integrated Control Hub (RICH) was a NodeJS and Angular project which allowed a user
-                            to create a script based on remote control buttons for quick and automated processing of common
-                            user patterns.</p>
+                            <p style="color: #141414;">The Remote Integrated Control Hub (RICH) was a NodeJS and Angular project which allowed a user to create a script based on remote control buttons for quick and automated processing of common user patterns.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 p-3" ng-click="go('https://github.com/jacobklitzke/website2')">
-                <div class="card" style="height: 15rem; overflow: hidden;">
+                <div class="card">
                     <!--<img class="card-img" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg">-->
                     <div class="card-block">
                         <div>
                             <p class="card-heading">Personal Profile<i class="fa fa-external-link-square" style="float: right;"></i></p>
                             <hr align="left" class="card-line" />
-                            <p style="color: #141414;">The code for this website, which is written using AngualarJS and Node JS. The production
-                            version of this code uses Nginx as the webserver.</p>
+                            <p style="color: #141414;">The code for this website, which is written using AngualarJS and Node JS. The production version of this code uses Nginx as the webserver.</p>
                         </div>
                     </div>
                 </div>
@@ -649,26 +657,24 @@
         </div>
         <div class="row d-flex justify-content-center">
             <div class="col-md-4 p-3" ng-click="go('https://github.com/jacobklitzke/movieFinder')">
-                <div class="card" style="height: 15rem; overflow: hidden;">
+                <div class="card">
                     <!--<img class="card-img" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg">-->
                     <div class="card-block">
                         <div>
                             <p class="card-heading">Movie Finder<i class="fa fa-external-link-square" style="float: right;"></i></p>
                             <hr align="left" class="card-line" />
-                            <p style="color: #141414;">This program is written in AngularJS and NodeJS and searches eBay to find movies a user is interested in
-                                purchasing. There is also an e-mail script which will e-mail results to the user written in python.</p>
+                            <p style="color: #141414;">This program is written in AngularJS and NodeJS and searches eBay to find movies a user is interested in purchasing. There is also an e-mail script which will e-mail results to the user written in python.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 p-3" ng-click="go('https://github.com/jacobklitzke/gpfs_script')">
-                <div class="card" style="height: 15rem; overflow: hidden;">
+                <div class="card">
                     <!--<img class="card-img" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg">-->
                     <div class="card-block">
-                            <p class="card-heading">GPFS Script<i class="fa fa-external-link-square" style="float: right;"></i></p>
-                            <hr align="left" class="card-line" />
-                            <p style="color: #141414;">This bash script is used for performing I/O benchmarking on a GPFS filesystem with IOR.
-                            This script was originally written for use with NetApp E-series storage devices.</p>
+                        <p class="card-heading">GPFS Script<i class="fa fa-external-link-square" style="float: right;"></i></p>
+                        <hr align="left" class="card-line" />
+                        <p style="color: #141414;">This bash script is used for performing I/O benchmarking on a GPFS filesystem with IOR. This script was originally written for use with NetApp E-series storage devices.</p>
                     </div>
                 </div>
             </div>

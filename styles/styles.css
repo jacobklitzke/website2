@@ -92,10 +92,6 @@ a.nav-link:hover {
   padding: 0px 50px 50px 50px;
 }
 
-.profile-header-size {
-  height: 20%;
-}
-
 .section-header {
   text-align: center;
   transform: translateY(15%);
@@ -139,9 +135,17 @@ a.nav-link:hover {
 }
 
 .carousel-padding {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 10px;
+}
+
+.carousel-control-prev {
+  margin-left: -5.5rem;
+}
+
+.carousel-control-next {
+  margin-right: -5.5rem;
 }
 
 .exp-circle {
@@ -157,6 +161,7 @@ a.nav-link:hover {
   font-weight: 300;
   line-height: 1.1;
   color: #1c1c1c;
+  vertical-align: bottom;
 }
 
 .line {
@@ -203,6 +208,8 @@ a.exp-line:hover {
 
 .card {
   background-color: #f7f7f7;
+  height: 15rem;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -242,5 +249,30 @@ a.contact-links:hover {
 @media only screen and (max-device-width: 480px) {
       .hide-mobile {
         display: none;
+      }
+
+      .display-5 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.1;
+        color: #1c1c1c;
+        vertical-align: bottom;
+      }
+
+      .carousel-control-prev {
+        margin-left: -3rem;
+      }
+
+      .carousel-control-next {
+        margin-right: -3rem;
+      }
+
+      .carousel-alignment {
+        display: flex;
+        align-items: center;
+      }
+
+      .card {
+        height: auto;
       }
 }

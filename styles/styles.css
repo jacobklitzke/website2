@@ -43,14 +43,6 @@ a.nav-link:hover {
   color: white;
 }
 
-.icon-color-open {
-  color: black;
-}
-
-.icon-color-closed {
-  color: white;
-}
-
 .title-section {
   color: white;
   height: 100%;
@@ -129,24 +121,39 @@ a.nav-link:hover {
   height: auto;
 }
 
-.carousel {
-  min-height: 85%;
-  width: 100%;
-  z-index: 1000;
+.card {
+  background-color: #f7f7f7;
+  height: 33rem;
 }
 
-.carousel-padding {
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 10px;
+.card-exp-heading {
+  font-size: 2.0rem;
+  font-weight: 300;
+  line-height: 1.1;
+  vertical-align: bottom;
+  color: #141414;
 }
 
-.carousel-control-prev {
-  margin-left: -5.5rem;
+.card-exp-tagline {
+  color: #141414;
+  font-size: 0.9em;
+  margin-bottom: 0.5rem;
 }
 
-.carousel-control-next {
-  margin-right: -5.5rem;
+.card-exp-subheadline {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.1;
+  vertical-align: bottom;
+  color: #17a7b5;
+}
+.card-body {
+  color: #141414;
+}
+
+.card-exp-line {
+  padding: 0px;
+  margin: 0px;
 }
 
 .exp-circle {
@@ -155,18 +162,13 @@ a.nav-link:hover {
 	height: 50px;
   max-width:100%;
   max-height:100%;
-}
-
-.display-5 {
-  font-size: 3.0rem;
-  font-weight: 300;
-  line-height: 1.1;
-  color: #1c1c1c;
+  margin: 0;
+  padding: 0;
   vertical-align: bottom;
 }
 
 .line {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
 .break-line {
@@ -207,13 +209,13 @@ a.exp-line:hover {
   padding: 0px 50px 50px 50px;
 }
 
-.card {
+.projects-section .card {
   background-color: #f7f7f7;
   height: 15rem;
   overflow: hidden;
 }
 
-.card:hover {
+.projects-section .card:hover {
   display: grid;
   background-color: rgba(23,161,185,0.3);
 }
@@ -247,30 +249,9 @@ a.contact-links:hover {
   color: #17a7b5;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 575px) {
       .hide-mobile {
         display: none;
-      }
-
-      .display-5 {
-        font-size: 1.5rem;
-        font-weight: 300;
-        line-height: 1.1;
-        color: #1c1c1c;
-        vertical-align: bottom;
-      }
-
-      .carousel-control-prev {
-        margin-left: -3rem;
-      }
-
-      .carousel-control-next {
-        margin-right: -3rem;
-      }
-
-      .carousel-alignment {
-        display: flex;
-        align-items: center;
       }
 
       .card {

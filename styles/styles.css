@@ -257,4 +257,10 @@ a.contact-links:hover {
       .card {
         height: auto;
       }
+
+      .projects-section .card {
+        background-color: #f7f7f7;
+        height: auto;
+        overflow: hidden;
+      }
 }
